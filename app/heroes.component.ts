@@ -4,7 +4,7 @@ import { HEROES } from './mock-heros';
 import { HeroService } from './hero.service';
 
 @Component({
-    selector: 'my-app',
+    selector: 'my-heroes',
     styles: [`
       .selected {
         background-color: #CFD8DC !important;
@@ -64,7 +64,7 @@ import { HeroService } from './hero.service';
             </ul>
             <my-hero-detail [hero]="selectedHero"></my-hero-detail>`
 })
-export class AppComponent implements OnInit {
+export class HeroesComponent implements OnInit {
     private heroes: Hero[];
 
     title = 'Tour of Heroes';
